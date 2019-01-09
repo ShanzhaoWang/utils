@@ -1,5 +1,5 @@
 # for the template that I use
-for (i in 1:2) {dev_config[,i] <- stringr::str_trim(dev_config[,i])} #str_trim to remove whitespaces
+for (i in 1:2) {dev_config[,i] <- stringr::str_trim(dev_config[,i])} #str_trim to remove whitespaces before and after
 # remove comments
 indexes_comment <- which(sapply(dev_config[,1], startsWith, "#"))
 if (length(indexes_comment)>0){
