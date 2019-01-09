@@ -1,0 +1,5 @@
+log_dir=/Users/AAAA/Desktop/
+registry_dump_file=/Users/AAAA/Desktop/some_file.csv
+#registry_dir=/Users/AAAA/Desktop/
+os_url=some_url
+os_domain=some_domain
