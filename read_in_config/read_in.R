@@ -9,3 +9,11 @@ dev_config <- data.frame(t(dev_config), stringsAsFactors = FALSE)
 
 names(dev_config) <- as.character(dev_config[1,])
 dev_config <- dev_config[-1,]
+
+
+### prompt user_name and password
+    if (is.na(OS_PASSWORD)) {
+      # only ask for password if not entered already
+      OS_USERNAME <<- readline(prompt="OVGTB username: ")
+      OS_PASSWORD <<- readline(prompt="OVGTB password: ")
+    }
